@@ -1,0 +1,26 @@
+Zadanie 1
+
+Zrobić klasę Book posiadajcą pole title - dostęp private
+Zrobić 3 różne klasy rozszerzajece klasę Book (JAVABook, PHPBook, NETBook)
+wszystkie 3 podklasy mają construktor bezparametrowy uzupełniając nadklasę Book o tytuł
+program ma możliwość w sposób minimalny umożliwić wypisania zawartości pola title
+
+Zadanie 2
+
+Stworzyć klasę która swoją budową umożliwia stworzenie dokładnie jednego egzemplarza swojej klasy
+(podpowiedź construktor jest prywatny)
+
+Zadanie 3
+
+Zbudować klase Factorio :)
+posiada 3 metody (funkcje)
+Zwracają 3 różne klasy MilitaryBuilder, StorageBuilder, LogisticBuilder  
+MilitaryBuilder storage posiada metodę setTroopSize konfigurującą obiekty wytwarzane
+StorageBuilder storage posiada metodę setStorageCapacity konfigurującą obiekty wytwarzane,
+LogisticBuilder storage posiada metody setStartPlace i setDestinationPlace konfigurującą obiekty wytwarzane,
+wszystkie trzy implementują interface Builder z methodą build zwracającą interface Resource
+Każda z powyższych klas służy do produkcji Resource (MilitaryResource, StorageResource, LogisticResource)
+wewnątrz implementowanej metody przekazujemy parametry do klasy produkowanej za pomocą konstruktora
+Interface Resource posiada metodę showDescription która zwraca tekst opisujący klasę konkretną
+
+
