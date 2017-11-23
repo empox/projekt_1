@@ -26,41 +26,46 @@ class Book {
     
     public function __construct($title){
         $this->title=$title;
-        echo 'Nadano mi tytuł: '.$this->title.'<br><br>';
+        echo 'Nadano mi tytuł: '.$this->title.'<br>';
         }
-    
+    public function pokazTytul(){
+        echo 'moj tytul to: '.$this->title.'<br><br>';
+    }
 }
     
 
 
 class JAVAbook extends Book{
-    public function __construct($tajtel)
+    
+    public function __construct()
             {
-    echo "utworzyłem ksiazke o JAVA <br>"   ;    
-        parent::__construct($tajtel);
-                                                                                                     
+        parent::__construct('JAVAbook');
+   echo "utworzyłem ksiazke o JAVA <br><br>"   ;                                                                                                  
 }
 }
 
 class PHPBook extends Book{
-    public function __construct($tajtel)
-            {
-     echo "utworzyłem ksiazke o PHP <br>"   ;     
-        parent::__construct($tajtel);
     
+    public function __construct()
+            {
+        parent::__construct('PHPbook');
+   echo "utworzyłem ksiazke o PHP <br><br>"   ;   
 }
 }
 
 class NETBook extends Book{
-    public function __construct($tajtel){
-   echo "utworzyłem ksiazke o PHP <br>";
-        parent::__construct($tajtel);
-     
+    public function __construct(){
+   parent::__construct('NEtbook');
+   echo "utworzyłem ksiazke o PHP <br><br>"   ; 
     }
    
 }
 
-$java=new JAVAbook('blavle');
-$java2=new JAVAbook('kaka');
-$php=new PHPBook('ksiazkao PHP');
-$php2=new PHPBook('PHPdla zielonych');
+$java=new JAVAbook();
+$php=new PHPBook();
+$net=new NETBook();
+
+$java->pokazTytul();
+
+$java2=new JAVAbook();
+$java2->pokazTytul();
