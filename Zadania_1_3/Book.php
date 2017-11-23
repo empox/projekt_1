@@ -69,3 +69,5 @@ $java->pokazTytul();
 
 $java2=new JAVAbook();
 $java2->pokazTytul();
+$net2= new NETBook();
+$net2->pokazTytul();
