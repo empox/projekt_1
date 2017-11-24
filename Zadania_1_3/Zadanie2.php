@@ -13,22 +13,35 @@ Stworzyć klasę która swoją budową umożliwia stworzenie dokładnie jednego 
 */
 
 class jakasKlasa{
-    private static $liczbaOb; 
+    private static $obiekt; 
+    public $ile;
     private function __construct(){}
     
     
     public static function pokazIleObj(){
         
-        if (self::$liczbaOb === null){
-            echo 'Nie stworzono żadnego obiektu!';
+        if (self::$obiekt === null){
+            echo '<br>Nie stworzono żadnego obiektu! Zaraz go stworzę...<br>';
+        self::$obiekt=new jakasKlasa();
+        //$ile++;
+        echo '<br>obiektów: przynajmniej 1<br>';
         }
+        
         else
         {
-        $liczba= self::$liczbaOb;
-        echo $liczba;
+        echo '<br>Próbuję stworzyć obiekt ale obiekt już został stworzony<br><br>';
         }
+        return self::$obiekt;
     }
 
 }
-jakasKlasa::pokazIleObj();
+$raz=jakasKlasa::pokazIleObj();
 
+$dwa=jakasKlasa::pokazIleObj();
+
+
+echo $raz==$dwa;
+/*if ($raz==$dwa){
+    echo 'raz jest taki sam';//Powinno tak byc?
+}*/
+$trzy=jakasKlasa::pokazIleObj();
