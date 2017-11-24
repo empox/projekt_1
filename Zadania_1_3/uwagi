@@ -1,0 +1,11 @@
+Zadanie 1 ok
+
+Zadanie 2 Prawie, Klasa narazie tworzy dokładnie 1 eqzemplarz klasy samo podejście jest ok.
+Spróbuj jeszcze przerobić tak tą methodę statyczną aby z utworzonego obiektu
+
+i spróbuj zrobić na zewnątrz klasy
+$obiekt1 = ...
+$obiekt2 = ...
+echo $objekt1 == objekt2
+
+powino dać true
