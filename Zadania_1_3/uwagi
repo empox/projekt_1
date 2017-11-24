@@ -1,11 +1,7 @@
 Zadanie 1 ok
 
-Zadanie 2 Prawie, Klasa narazie tworzy dokładnie 1 eqzemplarz klasy samo podejście jest ok.
-Spróbuj jeszcze przerobić tak tą methodę statyczną aby z utworzonego obiektu
-
-i spróbuj zrobić na zewnątrz klasy
-$obiekt1 = ...
-$obiekt2 = ...
-echo $objekt1 == objekt2
-
-powino dać true
+Zadanie 2 ok 
+// rada panuj nad wcięciami żeby poprawić czytelnośc , Netbeans powinien mieć jakiś skrut klawiszowy roiący to za ciebie
+// rada 2 staraj się pisać kod po angielsku :)
+// rada 3 nazywaj Methody zgodnie z ich przeznaczeniem zamiast pokażIle mogłaby się nazywać getInstance lub getObject lub coś w tym stylu
+// nie createInstance bo mogło by to sugerować że za każdym razem tworzy obiekt w tak nie jest :)
