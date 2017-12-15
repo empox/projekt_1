@@ -12,6 +12,11 @@
  * @author Wojtek
  */
 class Factorio{
+   /**
+    * konfiguracja obiektów xyzBuilder powinna być wyniesiona poza klasę Factorio
+    * co zrobisz gdy będziesz musiał skonfigurować 10 parametrów w MilitaryBuilder,
+    * a w StorageBuilder 2 parametry?
+    */
     public function __construct($zmienna, $ResourceValue)
     {
         if ($zmienna = 1)
