@@ -24,12 +24,12 @@ class jakasKlasa{
             echo '<br>Nie stworzono żadnego obiektu! Zaraz go stworzę...<br>';
         self::$obiekt=new jakasKlasa();
         //$ile++;
-        echo '<br>obiektów: przynajmniej 1<br>';
+            echo '<br>obiektów: przynajmniej 1<br>';
         }
         
         else
         {
-        echo '<br>Próbuję stworzyć obiekt ale obiekt już został stworzony<br><br>';
+            echo '<br>Próbuję stworzyć obiekt ale obiekt już został stworzony<br><br>';
         }
         return self::$obiekt;
     }
