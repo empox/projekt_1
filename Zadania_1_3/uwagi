@@ -4,4 +4,4 @@ Zadanie 2 ok
 // rada panuj nad wcięciami żeby poprawić czytelnośc , Netbeans powinien mieć jakiś skrut klawiszowy roiący to za ciebie
 // rada 2 staraj się pisać kod po angielsku :)
 // rada 3 nazywaj Methody zgodnie z ich przeznaczeniem zamiast pokażIle mogłaby się nazywać getInstance lub getObject lub coś w tym stylu
-// nie createInstance bo mogło by to sugerować że za każdym razem tworzy obiekt w tak nie jest :)
+// nie createInstance bo mogło by to sugerować że za każdym razem tworzy obiekt a tak nie jest :)
