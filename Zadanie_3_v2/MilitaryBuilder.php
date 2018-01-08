@@ -1,30 +1,26 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once 'Builder.php';
 
-/**
- * Description of MilitaryResource
- *
- * @author Wojtek
- */
-class MilitaryBuilder extends Factorio implements Builder_Interface
-{
-    public function Build() 
-    {
-        echo 'nadpisana funkcja interfejsu w MilitaryBuilder';
+class MilitaryBuilder implements Builder{
+    
+    public $Military_Resource;
+    
+    public function Build(){
+        echo 'utworzono... coś...';
+        //return $this->Military_Resource;
     }
     
-    public function __construct()
-    {
-        parent::__construct();//wywolany konstruktor rodzica "factorio"
+    
+    public function __construct(){
+        
+        echo 'utworzono builder Military <br><br>';
     }
-    public function setTroopSize($size)
-    {
-       echo 'TroppSize has been set to: '.$size; 
-    }
+    
+    
+    
+    
+    
+    
     
 }

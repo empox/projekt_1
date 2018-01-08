@@ -1,39 +1,30 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once 'MilitaryBuilder.php';
+require_once 'StorageBuilder.php';
+require_once 'LogisticBuilder.php';
 
-/**
- * Description of Factorio
- *
- * @author Wojtek
- */
-class Factorio{
-   /**
-    * konfiguracja obiektów xyzBuilder powinna być wyniesiona poza klasę Factorio
-    * co zrobisz gdy będziesz musiał skonfigurować 10 parametrów w MilitaryBuilder,
-    * a w StorageBuilder 2 parametry?
-    */
-    public function __construct($zmienna, $ResourceValue)
-    {
-        if ($zmienna = 1)
-        {
-            $Resource_Militaryo_Obj = new MilitaryBuilder();
-            $Resource_Militaryo_Obj->setTroopSize($ResourceValue);
-        }
-        elseif ($zmienna = 2) 
-        {
-            $Resource_Storage_Obj = new StorageBuilder();
-            $Resource_Storage_Obj->setTroopCapacity($ResourceValue);
-        }
-        else 
-        {
-            $Resource_Logistic_Obj = new LogisticBuilder();
-            $Resource_Logistic_Obj->setStartPlace();
-            $Resource_Logistic_Obj->setDestinationPlace();
-        }
+
+class Factorio{ //director (?)
+   
+    public $ResourceBlueprint;
+    
+    public function __construct() {
+        echo 'utworzono "fabryke" <br><br>';
     }
+    
+    public function InitMilitaryBuilder(){ //funkcja zwracajaca konkretny builder
+        return $this->ResourceBlueprint = new MilitaryBuilder();
+    }
+    
+    public function InitStorageBuilder(){
+        return $this->ResourceBlueprint = new StorageBuilder();
+    }
+    
+    public function InitLogisticBuilder(){
+        return $this->ResourceBlueprint = new LogisticBuilder();               
+    }
+    
 }
+
+
