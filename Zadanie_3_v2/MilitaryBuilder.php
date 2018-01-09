@@ -5,10 +5,10 @@ require_once 'Builder.php';
 class MilitaryBuilder implements Builder{
     
     public $Military_Resource;
+    //public $sizeOfTroops;
     
     public function Build(){
-        echo 'utworzono... coś...';
-        //return $this->Military_Resource;
+        echo 'Utworzono Resource Military<br><BR>';
     }
     
     
@@ -18,7 +18,10 @@ class MilitaryBuilder implements Builder{
     }
     
     
-    
+    public function setTroopSize($sizeOfTroops){
+        
+        echo 'Troop size has been set to: '.$sizeOfTroops.'<br><br>';
+    }
     
     
     
