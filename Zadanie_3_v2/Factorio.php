@@ -7,23 +7,27 @@ require_once 'LogisticBuilder.php';
 
 class Factorio{ //director (?)
    
-    public $ResourceBlueprint;
+    //private $resource;
     
     public function __construct() {
         echo 'utworzono "fabryke" <br><br>';
     }
     
     public function InitMilitaryBuilder(){ //funkcja zwracajaca konkretny builder
-        return $this->ResourceBlueprint = new MilitaryBuilder();
+        return new MilitaryBuilder();
     }
     
     public function InitStorageBuilder(){
-        return $this->ResourceBlueprint = new StorageBuilder();
+        return new StorageBuilder();
     }
     
     public function InitLogisticBuilder(){
-        return $this->ResourceBlueprint = new LogisticBuilder();               
+        return new LogisticBuilder();               
     }
+    /*
+    public function BuildResource(){
+        $this->resource
+    }*/
     
 }
 

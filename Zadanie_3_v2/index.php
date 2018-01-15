@@ -5,22 +5,21 @@ echo 'hello! <br>';
 
 
 $Choice = new Factorio();
-$Choice->InitMilitaryBuilder(); 
+$resourceMilitary = $Choice->InitMilitaryBuilder()->setTroopSize(55)->Build()->showDescription();
 
-$Choice->ResourceBlueprint->setTroopSize(25);
+$resourceStorage = $Choice->InitStorageBuilder()->setStorageCapacity(1000)->Build()->showDescription();
 
-
-$Resource = $Choice->ResourceBlueprint->Build();
-
-$Choice->InitStorageBuilder();
+$ResLogistic = $Choice->InitLogisticBuilder()->setStartPlace('lodz')->setDestinationPlace('warszawa')->Build()->showDescription();
 
 
-$Resource = $Choice->ResourceBlueprint->Build();
+//$builder->setTroopSize(25)->Build();
 
-$Choice->InitLogisticBuilder();
-$Resource = $Choice->ResourceBlueprint->Build();
 
-/*
+
+
+ /*       
+
+
 //Choice jest obiektem factorio z ktorego wywolujemy funkcje
 //w choce jest zmienna a raczej obiekt ktory jest odpowiednim Builderem
 //jako Resource generuje konkretny zasob przy pomocy funkcji build
@@ -28,5 +27,4 @@ $Resource = $Choice->ResourceBlueprint->Build();
 //
 //
 //OK to działa
- 
- */
+  */

@@ -15,6 +15,8 @@ MilitaryBuilder storage posiada metodę setTroopSize konfigurującą obiekty wyt
 
  * LogisticBuilder storage posiada metody setStartPlace i setDestinationPlace konfigurującą obiekty wytwarzane,
 
+
+
  * wszystkie trzy implementują interface Builder z methodą build zwracającą interface Resource
 
  * Każda z powyższych klas służy do produkcji Resource (MilitaryResource, StorageResource, LogisticResource)

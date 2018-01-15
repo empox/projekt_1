@@ -3,8 +3,12 @@
 require_once 'Builder.php';
 
 class LogisticBuilder implements Builder{
+    private $SP;
+    private $EP;
+    
     public function Build(){
-        echo 'Utworzono Resource Logistic<br><BR>';
+        //echo 'Utworzono Resource Logistic<br><BR>';
+        return new Resource($this);
     }
     
     
@@ -14,13 +18,15 @@ class LogisticBuilder implements Builder{
     }
     
     public function setStartPlace($startParam){
-        
-        echo 'Start plase has ben set to: '.$startParam.'<br><br>';
+        $this->SP=$startParam;
+        echo 'Start plase has ben set to: '.$this->SP.'<br><br>';
+        return $this;
     }
     
     public function setDestinationPlace($endParam){
-        
-        echo 'Destination place has benn set to: '.$endParam.'<br><br>';        
+        $this->EP=$endParam;
+        echo 'Destination place has benn set to: '.$this->EP.'<br><br>';        
+        return $this;
     }
     
 }

@@ -3,8 +3,12 @@
 require_once 'Builder.php';
 
 class StorageBuilder implements Builder{
+    
+    private $LB;
+    
     public function Build(){
-        echo 'utworzono resource typu Storage <br><BR>';
+        //echo 'utworzono resource typu Storage <br><BR>';
+        return new Resource($this);
     }
     
     
@@ -14,9 +18,9 @@ class StorageBuilder implements Builder{
     }
     
     public function setStorageCapacity($sizeOfstorage) {
-        
-        
+        $this->LB=$sizeOfstorage;        
         echo 'Storage Capacity has been set to: '.$sizeOfstorage.'<br><br>';
+        return $this;
     }
     
     
