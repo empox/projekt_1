@@ -1,16 +1,16 @@
-Zadanie 1
+Zadanie 1 ZDANE!!!
 
 Zrobić klasę Book posiadajcą pole title - dostęp private
 Zrobić 3 różne klasy rozszerzajece klasę Book (JAVABook, PHPBook, NETBook)
 wszystkie 3 podklasy mają construktor bezparametrowy uzupełniając nadklasę Book o tytuł
 program ma możliwość w sposób minimalny umożliwić wypisania zawartości pola title
 
-Zadanie 2
+Zadanie 2 ZDANE!!!
 
 Stworzyć klasę która swoją budową umożliwia stworzenie dokładnie jednego egzemplarza swojej klasy
 (podpowiedź construktor jest prywatny)
 
-Zadanie 3
+Zadanie 3 ZDANE!!!
 
 Zbudować klase Factorio :) 
 posiada 3 metody (funkcje)
@@ -27,7 +27,7 @@ Klasy należy deklarrować w oddzielnych plikach
 http://php.net/manual/en/functions.arguments.php
 http://php.net/manual/en/functions.returning-values.php
 
-Zadanie 4
+Zadanie 4 ZDANE!!!
 
 Zadeklarować przestrzenie nazw
 Zadeklarój 2 klasy "something" jedna należąca do przestrzeni globalnej, druga do przestrzeni "secondRealm"
@@ -36,4 +36,32 @@ oba namespace zadeklarować w jednym pliku
 w oddzielnym pliku wczytać oba namespace
 i wykorzystać obie klasy
 
+Zadanie 5:
+Zapoznanie ze sposobami kodowania danych
+1. HTML
+2. JSON
+3. XML
+4. urlEncode
+5. Dane binarne
+
+dodatkowe informacje co to content-type?
+
+Zadanie 6
+Przygotować stronę internetową Posadającą formularz i kilka przycisków każdy powoduje inną akcję
+
+Formularz zawiera pola Imię, Nazwisko oraz wiek (tylko liczba) dane formularza wysyłane są urlEncode
+
+Przyciski:
+1. Powoduję przekierowanie na inną stronę wyświetla "Witaj $imię $nazwisko chyba nie jesteś pełnoletni lub wiek dla osoby pełnoletniej"
+2. Powoduję pobranie danych w formacje JSON pola imię,nazwisko,wiek
+3. J.W. XML
+4. Server posiada też w zasobach obrazek ostatni przycisk umożliwia pobranie pliku
+
+Zadanie 7
+Zapoznanie się Framework CodeIngiter https://codeigniter.com/user_guide/
+-Model
+-Widoki
+-Kontrolery
+
+uruchomienie aplikacji
 
